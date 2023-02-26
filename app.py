@@ -12,7 +12,7 @@ def index():
 @app.route('/downloaded') # this is a job for GET, not POST
 def download_zip():
     return send_file(
-        '/Users/siddanthkarthik/PycharmProjects/ClassCapture/ClassCapture_Master.zip',
+        'ClassCapture_Master.zip',
         mimetype='application/zip',
         as_attachment=True
     )
