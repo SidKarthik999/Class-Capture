@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Class Capture 📷</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+</head>
+<body>
+
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+
+  <div class="mySlides w3-display-container w3-center">
+
+  </div>
+
+
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <img src="{{url_for('static', filename='classCapture.png')}}" width="500" height="300"></img>
+    <p class="w3-opacity"><i>Made by: Arjun Rajdev & Siddanth Karthik</i></p>
+    <p class="w3-justify">Class Capture is an innovative app that uses the powerful combination of Python and OpenCV to recognize faces in a classroom environment and mark students as present or absent. Developed as a solution to automate the attendance process in schools and colleges, this app offers a seamless and efficient way to keep track of students' attendance. With its advanced facial recognition technology, Class Capture accurately detects and verifies the presence of students in real-time, making attendance tracking effortless for teachers and administrators alike.
+
+      In addition to its attendance tracking capabilities, Class Capture also serves as a robust verification system that can prevent unauthorized or forced entry into schools. Its facial recognition technology can detect intruders at the front of the school, alerting security personnel and preventing potential threats to students' safety.
+
+      Overall, Class Capture is a versatile and useful app that can significantly improve attendance tracking and security in educational institutions. With its reliable performance and ease of use, it has the potential to revolutionize the way schools and colleges manage their attendance and security systems.</p>
+    <div class="w3-row w3-padding-32">
+
+    </div>
+  </div>
+
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+
+      <h2 class="w3-wide w3-center">DOWNLOAD</h2>
+      <p class="w3-opacity w3-center"><i>Click button to download zip file.</i></p><br>
+      <a href="{{ url_for('download_zip') }}">
+        <img src="{{url_for('static', filename='pwr.png')}}" width="300" height="370" class="center";></img>
+      </a>
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Footer -->
+
+
+
+</body>
+</html>
